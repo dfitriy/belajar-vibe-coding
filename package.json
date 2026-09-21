@@ -1,0 +1,23 @@
+{
+  "name": "belajar-vibe-coding",
+  "version": "1.0.0",
+  "description": "Bun + ElysiaJS + Drizzle ORM + MySQL project",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "elysia": "^1.2.25",
+    "drizzle-orm": "^0.40.0",
+    "mysql2": "^3.12.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.5",
+    "@types/bun": "latest"
+  }
+}
